@@ -31,9 +31,11 @@ p {
     text-align: center;
 }
 
+/*le di un degradé al footer*/
+
 footer {
 
-    background-color: rgb(206, 206, 206);
+    background-image: linear-gradient(to top, grey, whitesmoke);
     text-align: center;
     padding: 3rem 0;
     
@@ -47,9 +49,10 @@ footer {
     margin: 0 auto;
 }
 
+/*le di un degradé a la barra del menú*/
+
 .header {
-    background-color: rgb(50, 119, 209);
-    color: white;
+    background-image: linear-gradient(to bottom, blue, whitesmoke);
     padding: 2rem 0;
 }
 
@@ -84,6 +87,14 @@ footer {
 .navegation ul li a {
     display: block;
     padding: 0.5rem 3rem;
+}
+
+/*Agregué efecto a la barre de menú*/
+
+nav ul li:hover{
+
+    background-color: rgba(128, 128, 128, 0.63);
+    transform: scale(1.1);
 }
 
 /*Hasta acá se trabajó la barra de navegación*/
