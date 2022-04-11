@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+
+    height: 100vh;
+}
+
+body {
+
+    font-family: Georgia, times, serif;
+    color: rgb(51, 51, 51);
+    font-size: 1.2rem;
+    margin: 0;  
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+footer {
+
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+/* A partir de acá se trabaja en la barra de menú*/
+
+.container {
+    width: 85%;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(50, 119, 209);
+    color: white;
+    padding: 2rem 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.navegation ul li {
+    display: inline-block;
+}
+
+.navegation ul li a {
+    display: block;
+    padding: 0.5rem 3rem;
+}
+
+/*Hasta acá se trabajó la barra de navegación*/
+
+
+/*Elementos trabajados del main Index*/
+
+.mainIndex{
+    justify-content: center;
+    
+}
+
+.mainP{
+    text-align: center;
+    margin: 2rem;
+}
+
+.imgAuto{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    
+}
+
+img{
+
+    width: 400px;
+    height: 400px;
+    
+}
+
+
+h2 {
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: small;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+/*Hasta acá trabajé los elementos del main Index*/
+
+/*Grid para la página de Servicios*/
+
+
+.mainServicio{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainS mainS"
+                         "imagen1 imagen2"
+                         "imagen3 imagen4";
+    justify-content: center;
+}
+
+.sectionNosotros{
+    display:none
+
+}
+
+
+.mainS{
+    text-align: center;
+    grid-area: mainS;
+    margin: auto;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    margin: 0.3rem;
+}
+
+.imagen2{
+    grid-area: imagen2;
+    margin: 0.3rem;
+}
+
+.imagen3{
+    grid-area: imagen3;
+    margin: 0.3rem;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    margin: 0.3rem;
+}
+
+
+@media only screen and (min-width:600px){
+
+    .mainServicio{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainS mainS img img"
+                             "imagen1 imagen2 imagen3 imagen4";                   
+        justify-content: center;
+        
+    }
+
+
+    .sectionNosotros{
+        display: block;
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .mainS{
+
+        font-size: 1.5rem;
+            
+    }
+}
+
+/*Fin Grid para la página de Servicios*/
+
+
+.nuestraHistoria {
+
+    color: black;
+    font-size:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin: 0px;
+    padding: 50px;
+    font-weight: bold;
+
+}
+
+.galeria {
+
+    color: black;
+    font: size 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px;
+    padding: 50px;
+    font-weight: bold;
+
+}
+
+.formulario {
+
+    color: black;
+    font: size 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 10rem;
+    padding: 1rem;
+    font-weight: bold;
+
+}
+
+form {
+
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 12rem;
+    padding:0;
+}
