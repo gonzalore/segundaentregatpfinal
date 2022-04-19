@@ -6,8 +6,7 @@
 
 
 .contenedor{
-
-    height: 100vh;
+    height: 90vh;
 }
 
 body {
@@ -15,7 +14,9 @@ body {
     font-family: Georgia, times, serif;
     color: rgb(51, 51, 51);
     font-size: 1.2rem;
-    margin: 0;  
+    margin: 0;
+    position: relative;
+    min-height: 100vh;  
 }
 
 
@@ -34,7 +35,6 @@ p {
 /*le di un degradé al footer*/
 
 footer {
-
     background-image: linear-gradient(to top, grey, whitesmoke);
     text-align: center;
     padding: 3rem 0;
